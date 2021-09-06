@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bedroom</title>
+	<link rel="stylesheet" type="text/css" href="bedroom.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="dashboard">
+		<div class="header">
+			<div class="back"><i class="fa fa-chevron-left" id="back"></i></div>
+			<div class="headertext">Bedrooom</div>
+		</div>
+		<div class="picture">
+			<img src="../picture/bedroom.jpg">
+		</div>
+		<div class="container1">
+			<div class="content">
+				<img id="tv" src="../picture/tv_off.png">
+				<button onclick="Turn_On_tv()" class="button1">ON</button>
+				<button onclick="Turn_Off_tv()"class="button2">OFF</button>
+			</div>
+			<div class="content">
+				<img id="light" src="../picture/light_off.png">
+				<button onclick="Turn_On()" class="button1">ON</button>
+				<button onclick="Turn_Off()"class="button2">OFF</button>
+			</div>
+		</div>
+		<div class="container2">
+			<div class="content">
+				<img id="fan" src="../picture/fan_off.png">
+				<button onclick="Turn_On_fan()" class="button1">ON</button>
+				<button onclick="Turn_Off_fan()" class="button2">OFF</button>
+			</div>
+			<div class="content">
+				<img id="light01" src="../picture/light_on.png">
+				<div>
+					<input type="range" id="slider01" min="0"
+					max="10" value="10" style="margin-left: 25px;">
+				<span id="slide_val">10</span>
+			</div>
+			</div>
+				
+		</div>
+		<div class="container3">
+			<div class="content">
+				<img id="lamp" src="../picture/lamp_off.png">
+				<button onclick="Turn_On_lamp()" class="button1">ON</button>
+				<button onclick="Turn_Off_lamp()" class="button2">OFF</button>
+			</div>
+			<div class="content">
+				<img id="speaker" src="../picture/speaker_off.png">
+				<button onclick="Turn_On_speaker()" class="button1">ON</button>
+				<button onclick="Turn_Off_speaker()" class="button2">OFF</button>
+			</div>
+				
+		</div>
+		<div class="snackbar" id="snackbar">Snack bar</div>
+		
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+	<script type="text/javascript" src="bedroom.js"></script>
+
+</body>
+</html>

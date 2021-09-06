@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Home</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type=”text/javascript” src=”http://rilwis.googlecode.com/svn/trunk/weather.min.js”></script>
+</head>
+<body>
+	<div class="dashboard">
+		<div class="header">
+			<div class="profile"><img src="./picture/profile.jpg" id="profile"></div>
+			<div class="notification" id="notification"><i class="fa fa-bell"></i></div>
+			<div class="window"><i class="fa fa-th-large"></i></div>
+		</div>
+		<div class="name">
+			<div class="namedate">
+				<div class="name1">NGUYỄN ĐÌNH NGHĨA</div>
+				<div class="date"><p id="date">27 May 2021</p></div>
+			</div>
+			<div class="add"><i class="fa fa-plus"></i></div>
+		</div>
+		<div class="weather">
+			<div class="weather1">
+				<div class="sunclould"><img src="./picture/cloudy.png"></div>
+				<div class="inf4">
+					<p>Clouldy</p>
+					<p>TP Hồ Chí Minh</p>
+				</div>
+				<div class="temp"><p id="temp">29</p><p id="doC">°C</p></div>
+			</div>
+			<dir class="weather2">
+				<div class="sensible">
+					<div class="sensible1"><p id="sensible">32</p><p id="doc">°C</p></div>
+					<p>Sensible</p>
+				</div>
+				<div class="humidity">
+					<div class="humidity1"><p id="humidity">65</p><p id="pt">%</p></div>
+					<p>Humidity</p>
+				</div>
+				<div class="wforce">
+					<p>4</p>
+					<p>W.Force</p>
+				</div>
+				<div class="pressure">
+					<p>1009hpa</p>
+					<p>Pressure</p>
+				</div>
+			</dir>
+		</div>
+		<div class="headerroom">
+			<div  class="yourroom"><p> Your Rooms</p></div>
+			<div class="viewall"><p>View All</p></div>
+		</div>
+		<div class="room">
+			<div class="room12">
+				<div class="livingroom"  >
+					<div class="iconroom">
+						<div class="iconroomliv"><i class="fa fa-television" ></i></div>
+						<div class="iconroom2"><i class="fa fa fa-power-off" id="livingroom"></i></div>
+					</div>
+					<div class="nameroom">
+						<div class="nameroom1"><p>Living Room</p></div>
+						<div class="nameroom2"><p>3 Devices</p></div>
+					</div>
+				</div>
+				<div class="bedroom">
+					<div class="iconroom">
+						<div class="iconroombed"><i class="fa fa-bed"></i></div>
+						<div class="iconroom2"><i class="fa fa fa-power-off" id="bedroom"></i></div>
+					</div>
+					<div class="nameroom">
+						<div class="nameroom1"><p>Bedroom</p></div>
+						<div class="nameroom2"><p>6 Devices</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="room34">
+				<div class="diningroom" >
+					<div class="iconroom">
+						<div class="iconroomdin"><i class="fa fa-cutlery"></i></div>
+						<div class="iconroom2"><i class="fa fa fa-power-off" id="diningroom"></i></div>
+					</div>
+					<div class="nameroom">
+						<div class="nameroom1"><p>Dining Room</p></div>
+						<div class="nameroom2"><p>3 Devices</p></div>
+					</div>
+				</div>
+				<div class="bathroom" >
+					<div class="iconroom">
+						<div class="iconroombath"><i class="fa fa-bath"></i></div>
+						<div class="iconroom2"><i class="fa fa fa-power-off" id="bathroom"></i></div>
+					</div>
+					<div class="nameroom">
+						<div class="nameroom1"><p>Bathroom</p></div>
+						<div class="nameroom2"><p>6 Devices</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+	<script src="home.js"></script>
+</body>
+</html>

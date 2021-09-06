@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Living Room</title>
+	<link rel="stylesheet" type="text/css" href="livingroom.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="dashboard">
+		<div class="header">
+			<div class="back" ><i class="fa fa-chevron-left" id="back"></i></div>
+			<div class="headertext">Living Room</div>
+		</div>
+		<div class="picture">
+			<img src="../picture/livingroom.jpg">
+		</div>
+		<div class="container1">
+			<div class="content">
+				<img id="tv" src="../picture/tv_off.png">
+				<button onclick="Turn_On_tv()" class="button1">ON</button>
+				<button onclick="Turn_Off_tv()"class="button2">OFF</button>
+			</div>
+			<div class="content0">
+				<img id="light" src="../picture/light_off.png">
+				<button onclick="Turn_On()" class="button1">ON</button>
+				<button onclick="Turn_Off()"class="button2">OFF</button>
+			</div>
+		</div>
+		<div class="container2">
+			<div class="content1">
+				<img id="fan" src="../picture/fan_off.png">
+				<button onclick="Turn_On_fan()" class="button1">ON</button>
+				<button onclick="Turn_Off_fan()" class="button2">OFF</button>
+			</div>
+				
+		</div>
+		<div class="snackbar" id="snackbar">snackbar</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+	<script type="text/javascript" src="livingroom.js"></script>
+</body>
+</html>
